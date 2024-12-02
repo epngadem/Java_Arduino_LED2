@@ -7,7 +7,7 @@ public class ArduinoLEDControl {
 
     public static void main(String[] args) throws InterruptedException, IOException {
         // Étape 1 : Test et ouverture du port COM8
-        SerialPort sp = SerialPort.getCommPort("COM5");
+        SerialPort sp = SerialPort.getCommPort("COM8");
         sp.setComPortParameters(9600, 8, 1, 0);
         sp.setComPortTimeouts(SerialPort.TIMEOUT_WRITE_BLOCKING, 0, 0);
 
